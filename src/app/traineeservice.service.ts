@@ -21,7 +21,7 @@ export class TraineeserviceService {
       return this.http.post<Issue>(this.Url+"/insert",course);
     }
     public saveTopic(course: Issue) {
-      return this.http.post<Issue>(this.Url+"/inserttopic",course);
+      return this.http.post<Issue>(this.Url+"/inserttopic",course); 
     }
     public saveSubject(course:Issue){
       console.log(course);
