@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class TraineeserviceService {
   private Url: string;
   constructor(private http:HttpClient) { 
-    this.Url = 'http://192.168.6.25:8080/smi';
+    this.Url = 'http://smiinnothinkservice.herokuapp.com/smi';
     }
     public getCourseDetails(): Observable<Issue[]> {
       return this.http.get<Issue[]>(this.Url+"/get");
